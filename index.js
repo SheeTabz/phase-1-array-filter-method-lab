@@ -17,26 +17,26 @@ function fuzzyMatch(arr, str){
         return word.find(i => i[0]==str.charAt(0))
 })
 }
-// const drivers = [
-//     {
-//       name: 'Bobby',
-//       hometown: 'Pittsburgh' },
-//     {
-//       name: 'Sammy',
-//       hometown: 'New York' } ,
-//     {
-//       name: 'Sally',
-//       hometown: 'Cleveland' },
-//     {
-//       name: 'Annette',
-//       hometown: 'Los Angeles' },
-//     {
-//       name: 'Bobby',
-//       hometown: 'Tampa Bay' }
-//   ];
+const driver = [
+    {
+      name: 'Bobby',
+      hometown: 'Pittsburgh' },
+    {
+      name: 'Sammy',
+      hometown: 'New York' } ,
+    {
+      name: 'Sally',
+      hometown: 'Cleveland' },
+    {
+      name: 'Annette',
+      hometown: 'Los Angeles' },
+    {
+      name: 'Bobby',
+      hometown: 'Tampa Bay' }
+  ];
 
 
 function matchName(arr, str){
   return arr.filter(item => item.name === str);
 }
-console.log(matchName(drivers, "Bobby"))
+console.log(matchName(driver, "Bobby"))
